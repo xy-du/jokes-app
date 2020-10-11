@@ -12,8 +12,8 @@ public class RandomJokesServiceImpl implements RandomJokesService {
 
     private final ChuckNorrisQuotes quotes;
 
-    public RandomJokesServiceImpl() {
-        this.quotes = new ChuckNorrisQuotes();
+    public RandomJokesServiceImpl(ChuckNorrisQuotes quotes) {
+        this.quotes = quotes;
     }
 
     @Override
